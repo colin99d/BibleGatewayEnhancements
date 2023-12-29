@@ -1,0 +1,21 @@
+{
+	"name": "BibleGateway Extensions",
+	"description": "Add BibleGateway Extensions to your Chrome browser!",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_icon": "hello_extensions.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["scripting", "activeTab"],
+	"commands": {
+		"_execute_action": {
+			"suggested_key": {
+				"default": "Ctrl+B",
+				"mac": "Command+B"
+			}
+		}
+	}
+}
